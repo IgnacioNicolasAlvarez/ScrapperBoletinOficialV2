@@ -1,0 +1,6 @@
+[db.mongo.public.credentials]
+db = "avisos"
+collection = "avisos"
+
+[scrap]
+url = "https://boletin.tucuman.gov.ar/boletin/view"
