@@ -10,7 +10,8 @@ def scrap(scrap_date: str = typer.Option(..., prompt="Date to scrap")):
     scrapper = Scrapper(scrap_date, settings.scrap.url)
     avisos = scrapper.get_grouped_avisos()
 
-    _ = map(scrapper.save_aviso, avisos)
+    for aviso in avisos:
+        scrapper.save_aviso(aviso)
 
 
 if __name__ == "__main__":

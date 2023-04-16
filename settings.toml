@@ -1,4 +1,4 @@
-[db.mongo.public.credentials]
+[metadata]
 db = "avisos"
 collection = "avisos"
 

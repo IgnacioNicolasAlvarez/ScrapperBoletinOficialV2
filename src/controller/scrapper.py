@@ -10,8 +10,8 @@ repository = MongoRepository(
     user=settings.db.mongo.private.credentials.user,
     password=settings.db.mongo.private.credentials.password,
     server=settings.db.mongo.private.credentials.server,
-    db=settings.db.mongo.public.db,
-    collection=settings.db.mongo.public.collection,
+    db=settings.metadata.db,
+    collection=settings.metadata.collection,
 )
 
 
