@@ -16,3 +16,6 @@ def scrap(scrap_date: str = typer.Option(..., prompt="Date to scrap")):
 
 if __name__ == "__main__":
     app()
+
+
+
