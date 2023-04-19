@@ -19,7 +19,7 @@ class Scrapper:
     def __init__(self, scrap_date, url):
         self.url = url
         self.payload = {
-            "fechaBoletin0": scrap_date,
+            "fechaBoletin": scrap_date,
         }
         self.headers = {"User-Agent": UserAgent().random}
 
